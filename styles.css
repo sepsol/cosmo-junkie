@@ -5,7 +5,7 @@
 }
 
 /* reset */
-* {
+body, p, a, ul, li {
   margin: 0;
   padding: 0;
   text-decoration: none;
@@ -16,8 +16,8 @@ li {
 
 /* base styles */
 body {
-  background-color: var(--secondary);
   overflow-x: hidden;
+  background-color: var(--secondary);
   font-family: 'Rubik Regular';
 }
 .button {
@@ -68,6 +68,37 @@ h4 {
 }
 
 /* mobile styles */
+.grid {
+  display: grid;
+  grid-template-columns: repeat(8, 1fr);
+}
+.site-nav {
+  margin: 0 20px;
+}
+.site-nav h1 {
+  grid-row: 1;
+  grid-column: 1/4;
+  border-bottom: 3px solid var(--primary);
+  padding-bottom: 10px;
+}
+.site-nav ul {
+  display: none;
+}
+#welcome {
+  padding: 0 20px 20px;
+}
+.welcome-text {
+  grid-column: 1/6;
+}
+.welcome-text a {
+  margin: 20px 0;
+}
+.welcome-image {
+  grid-column: 6/9;
+}
+.welcome-image img {
+  width: 200%;
+}
 
 /* small tablet styles */
 @media screen and (min-width: 620px) {
