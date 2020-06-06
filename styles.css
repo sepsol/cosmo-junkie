@@ -21,7 +21,7 @@ body {
   font-family: 'Rubik Regular';
 }
 .button {
-  background-color: none;
+  background-color: transparent;
   border: 2px solid var(--primary);
   border-radius: 20px;
   color: var(--primary);
@@ -29,6 +29,7 @@ body {
   padding: 6px 12px;
   box-shadow: 1px 2px 3px rgba(0, 0, 0, 0.6);
   display: inline-block;
+  cursor: pointer;
 }
 .button:hover {
   color: #222;
@@ -40,6 +41,7 @@ input, textarea {
   border-radius: 20px;
   color: #F2F2F2;
   padding: 10px 16px;
+  outline: none;
 }
 
 /* fonts */
@@ -143,6 +145,50 @@ h4 {
 #skills img {
   height: 80px;
   margin: 10px auto;
+}
+#contact {
+  padding: 30px 20px;
+  background-color: #080936;
+}
+#contact h3, #contact p {
+  text-align: center;
+  margin-bottom: 0;
+}
+#contact form {
+  margin: 20px auto;
+  width: 80%;
+  max-width: 400px;
+  text-align: center;
+}
+#contact form input, #contact form textarea {
+  width: 100%;
+  margin: 10px 0;
+}
+#contact form .button {
+  margin-top: 10px;
+}
+footer {
+  padding: 30px 20px;
+  background-color: #14153D;
+  background-image: url('assets/footer_image.png');
+  background-size: 40%;
+  background-repeat: no-repeat;
+  background-position: top center;
+}
+footer p.copyright {
+  grid-column: 1/3;
+  font-size: 0.8em;
+}
+footer ul.social {
+  grid-column: 7/9;
+  display: flex;
+  justify-content: flex-end;
+}
+footer ul.social li {
+  margin: 0 6px;
+}
+footer ul.social li a img {
+  width: 20px;
 }
 
 /* small tablet styles */
