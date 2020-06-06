@@ -43,6 +43,9 @@ input, textarea {
   padding: 10px 16px;
   outline: none;
 }
+input:focus, textarea:focus {
+  border: 2px solid #eaeaf5;
+}
 
 /* fonts */
 @font-face {
@@ -314,7 +317,6 @@ footer ul.social li a img {
   }
   footer {
     padding: 80px 0;
-    background-size: 30%;
   }
   footer ul.social li a img {
     width: 30px;
