@@ -334,7 +334,7 @@ footer ul.social li a img {
 /* print media query */
 @media print {
 
-  form {
+  #contact {
     display: none;
   }
 
