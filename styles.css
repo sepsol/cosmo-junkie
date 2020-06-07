@@ -44,7 +44,11 @@ input, textarea {
   outline: none;
 }
 input:focus, textarea:focus {
-  border: 2px solid #eaeaf5;
+  border: 2px solid var(--primary);
+}
+body *::selection {
+  background-color: var(--primary);
+  color: #FFF;
 }
 
 /* fonts */
@@ -179,7 +183,7 @@ footer {
   background-position: top center;
 }
 footer p.copyright {
-  grid-column: 1/3;
+  grid-column: 1/4;
   font-size: 0.8em;
 }
 footer ul.social {
@@ -229,6 +233,9 @@ footer ul.social li a img {
   }
   footer {
     background-size: 30%;
+  }
+  footer .copyright br {
+    display: none;
   }
 
 }
@@ -330,5 +337,5 @@ footer ul.social li a img {
   form {
     display: none;
   }
-  
+
 }
